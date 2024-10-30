@@ -1,0 +1,64 @@
+.carousel-container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+  border-radius: 10px;
+  font-size: 1.5em;
+  transition: background-color 0.3s ease;
+}
+
+.text-slide {
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+  color: #fff; /* White text for contrast */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-slide img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain; /* Ensures the image fits within the slide without being cut */
+  border-radius: 10px;
+}
+
+.slick-prev, .slick-next {
+  width: 40px;
+  height: 40px;
+  z-index: 1;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+.slick-prev:hover, .slick-next:hover {
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.slick-prev:before, .slick-next:before {
+  font-size: 20px;
+  color: #333;
+}
+
+.slick-dots li button:before {
+  font-size: 12px;
+  color: #333;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #3498db;
+} 
